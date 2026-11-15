@@ -1,0 +1,1 @@
+sudo systemctl stop wg-quick@wgcf && sudo systemctl disable wg-quick@wgcf && sudo dnf remove -y wireguard-tools && sudo rm -rf /etc/wireguard /usr/local/bin/wgcf* ~/.wgcf && sudo modprobe -r wireguard && sudo reboot
